@@ -77,7 +77,7 @@
             value="3" onclick="NumPressed(3)"></td>
          <td><input name="btnPercent" type="Button"
             value="%" onclick="Percent()" /></td>
-         <td align=middle>&nbsp;</td>
+         <td><input name="btnSqrt" type="Button" value="Sqr" onclick="Sqrt()"></td>
      </tr>
      <tr>
          <td><input name="btnZero" type="Button"
@@ -193,6 +193,11 @@ function Percent ()
     Fcalc.ReadOut.value = 
       (parseFloat(Fcalc.ReadOut.value) / 100) * 
       parseFloat(Currents);
+}
+function Sqrt () 
+{
+    Fcalc.ReadOut.value = Math.sqrt(parseFloat(Fcalc.ReadOut.value)) ;
+      
 }
 </script>
 </body>
